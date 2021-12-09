@@ -1,0 +1,13 @@
+[package]
+name = "samp_capture_blinking"
+version = "0.1.0"
+authors = ["Northn <erolerol3760@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+winapi = { version = "0.3.9", features = ["libloaderapi"] }
+rtdhook-rs = { path = "../rtdhook-rs" }
+libc = { version = "0.2.109" }
